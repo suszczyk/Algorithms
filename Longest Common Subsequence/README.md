@@ -4,7 +4,7 @@
 
 `Write a function that takes two lists filled with integers, and returns the LENGTH of the LONGEST common subsequence.`
 
-To solve this problem I used the `NumPy` library, which handles arrays efficiently. My implementation works for both numbers and letters.
+To solve this problem I used the `NumPy` library, which handles matrixes efficiently. My implementation works for both numbers and letters.
 
 ## Code
 
