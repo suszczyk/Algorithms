@@ -157,7 +157,7 @@ The second condition occurs when the number marked in red is less than or equal 
 In the last case, there is simply a move one column to the left.
 
 
-## Testy
+## Tests
 
 During my tests, I used the website https://www.mimuw.edu.pl/~erykk/algovis/lcs.html
 
@@ -167,7 +167,7 @@ During my tests, I used the website https://www.mimuw.edu.pl/~erykk/algovis/lcs.
     y = [2, 3, 4]
 ```
 
-```python
+```text
 First tab:  [1, 2, 4]
 Second tab:  [2, 3, 4]
 [[0. 0. 0. 0.]
@@ -191,7 +191,7 @@ Longest Common Subsequence:
 ```
 
 
-```python
+```text
 First tab:  ['a', 'c', 'b', 'c', 'f']
 Second tab:  ['a', 'b', 'c', 'd', 'a', 'f']
 [[0. 0. 0. 0. 0. 0. 0.]
@@ -219,7 +219,7 @@ a b c f
     y=[2,0,5,3,1,3,5,4,1,7,2,5]
 ```
 
-```python
+```text
 First tab:  [3, 1, 2, 5, 0, 7, 4, 3, 5, 7, 7, 2]
 Second tab:  [2, 0, 5, 3, 1, 3, 5, 4, 1, 7, 2, 5]
 [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
@@ -253,7 +253,7 @@ Longest Common Subsequence:
 ```
 
 
-```python
+```text
 First tab:  ['d', 'y', 'n', 'a', 'm', 'i', 'c', 'p', 'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g']
 Second tab:  ['c', 'o', 'm', 'm', 'o', 'n', 's', 'u', 'b', 's', 'e', 'q', 'u', 'e', 'n', 'c', 'e']
 [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
