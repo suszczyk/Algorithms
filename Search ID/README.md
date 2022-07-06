@@ -705,11 +705,11 @@ Search time:  25.780163288116455
 
 ### Helpful links when creating a report
 
-[Open Addressing] - https://www.youtube.com/watch?v=Dk57JonwKNk&ab_channel=GeeksforGeeks
-[Double Hash] - https://www.youtube.com/watch?v=HcWxaVl1TII&ab_channel=LalithaNatraj
-[Separate Chaining] - https://www.youtube.com/watch?v=_xA8UvfOGgU
-[Cuckoo Hashing] - http://people.cs.bris.ac.uk/~clifford/coms31900-2020/slides/cuckoo-hashing.pdf
-[Cuckoo Hashing] - https://cs.stanford.edu/~rishig/courses/ref/l13a.pdf
+* [Open Addressing] - https://www.youtube.com/watch?v=Dk57JonwKNk&ab_channel=GeeksforGeeks
+* [Double Hash] - https://www.youtube.com/watch?v=HcWxaVl1TII&ab_channel=LalithaNatraj
+* [Separate Chaining] - https://www.youtube.com/watch?v=_xA8UvfOGgU
+* [Cuckoo Hashing] - http://people.cs.bris.ac.uk/~clifford/coms31900-2020/slides/cuckoo-hashing.pdf
+* [Cuckoo Hashing] - https://cs.stanford.edu/~rishig/courses/ref/l13a.pdf
 
 
 Mateusz Suszczyk
