@@ -1,6 +1,6 @@
 # Shell sort with different gap sequences
 
----
+
 ## (step 1)
 
 I'll start with the basic InsertionSortStep algorithm that we prepared in class. In this example, I will work on **4096** numbers from **1** to **4095**.
@@ -15,14 +15,14 @@ for n in range (4096):
 
 
 start=time.time()
-def InsertSortStep(tab,krok):
+def InsertSortStep(tab,step):
     for i in range(1, len(tab)):
         a=tab[i]
-        k=i-krok
+        k=i-step
         while(a<tab[k] and k>=0):
-            tab[k+krok]=tab[k]
-            k=k-krok
-        tab[k+krok]=a
+            tab[k+step]=tab[k]
+            k=k-step
+        tab[k+step]=a
     return tab
 
 InsertSortStep(tab,1)
@@ -46,7 +46,7 @@ However, the situation changes with more numbers.
 
 
 
-Kod: 
+## Code: 
 
 ```python
 import time
@@ -189,14 +189,14 @@ def tribonacci():
     return tribonacci_dec
 
 
-def InsertSortStep(tab, krok):
+def InsertSortStep(tab, step):
     for i in range(1, len(tab)):
         a = tab[i]
-        k = i-krok
+        k = i-step
         while(a < tab[k] and k >= 0):
-            tab[k+krok] = tab[k]
-            k = k-krok
-        tab[k+krok] = a
+            tab[k+step] = tab[k]
+            k = k-step
+        tab[k+step] = a
     return tab
 
 
@@ -273,9 +273,9 @@ sorts = [
 ]
 
 
-ile_tys = 100
+k_thousands = 100
 
-elements = np.array([i*ile_tys*100 for i in range(1, 11)])
+elements = np.array([i*k_thousands*100 for i in range(1, 11)])
 plt.xlabel('List length')
 plt.ylabel('Time (s)')
 
@@ -285,8 +285,8 @@ for sort in sorts:
     start_all = time.time()
     for i in range(1, 11):
         a = []
-        for n in range(i*ile_tys*100):
-            a.append(random.randrange(1, i*ile_tys*100))
+        for n in range(i*k_thousands*100):
+            a.append(random.randrange(1, i*k_thousands*100))
         gaps = sort["gap"]()
         print(gaps)
         start = time.time()
@@ -295,7 +295,7 @@ for sort in sorts:
         end = time.time()
         times.append(end - start)
         # print(times)
-        print(sort["name"], "Sorted", i*ile_tys*100, "Elements in", end - start, "s")
+        print(sort["name"], "Sorted", i*k_thousands*100, "Elements in", end - start, "s")
         end_all = time.time()
         print(sort["name"], "Sorted Elements in", end_all - start_all, "s")
 
